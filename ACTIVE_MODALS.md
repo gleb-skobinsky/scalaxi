@@ -110,3 +110,22 @@
   </div>
 </div>
 ```
+
+Видно, что у элемента в html, сгенерированном платформой, есть class, id и style. Class единый для всех панелей, id меняется с каждой перезагрузкой страницы. Остается только инлайновый стиль, с его помощью можно сделать селектор для css. Стили можно прописать в сыром html-элементе с таким содержанием:
+```
+<style>
+  div[style*="padding: 24px 24px 24px 24px; width: 600px; flex-basis: auto; border-radius: 12px 12px 12px 12px; background-color: #FFFFFFFF; flex-direction: column;"] {
+    position: absolute;
+    width: 600px;
+    height: 208px;
+    left: 420px;
+    top: 408px;
+    background: #ffffff;
+    box-shadow: 0px 20px 40px -5px rgba(0, 54, 159, 0.2);
+    border-radius: 12px;
+    z-index: 10000;
+  }
+</style>
+```
+Результатом в платформе будет такое отображение:
+![alt text](https://github.com/gleb-skobinsky/scalaxi/blob/main/modal_in_studio.png?raw=true)
