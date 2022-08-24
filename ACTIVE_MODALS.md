@@ -129,3 +129,47 @@
 ```
 Результатом в платформе будет такое отображение:
 ![alt text](https://github.com/gleb-skobinsky/scalaxi/blob/main/modal_in_studio.png?raw=true)
+
+Отлично. Теперь панель выглядит как модальное окно с тенью. Для большей красоты добавим сырой html с фоном, который будет отображаться одновременно с модалкой:
+```
+<div
+  style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4);
+  "
+></div>
+```
+
+ВАЖНО! После редактирования html-элемента надо снять галочку с Visible. Рендеринг сырого html прямо в студии может привести к тому, что весь интерфейс студии будет перекрыт маской, и с этим ничего нельзя будет сделать. 
+
+В конце для открытия и закрытия модального окна нам нужно дополнить Component Script соответствующими функциями и прописать их в Actions кнопок.
+```
+import clr
+clr.AddReference("System.Reactive")
+import System
+clr.ImportExtensions(System)
+from System import ObservableExtensions
+
+context.Properties.StackPanel_527.Visible = False
+context.Properties.RawHtml_026.Visible = False
+
+def showModalConfirmation(*args, **kwargs):
+    context.Properties.StackPanel_527.Visible = True
+    context.Properties.RawHtml_026.Visible = True
+
+def hideModalConfirmation(*args, **kwargs):
+    context.Properties.StackPanel_527.Visible = False
+    context.Properties.RawHtml_026.Visible = False
+    
+def hideAndNavigate(*args, **kwargs):
+    context.Properties.StackPanel_527.Visible = False
+    context.Properties.RawHtml_026.Visible = False
+    context.Commands.NavigationBack()
+```
+
+Стоит заметить, что прежде чем выполнить переход назад по истории браузера, нужно закрыть и модалку, и ее фон. Если компонент состоит из множества страниц, открытие одной из страниц не приведет к новому выполнению скрипта, и модалка останется открытой при следующем открытии страницы.
