@@ -17,3 +17,20 @@ Subscriptions,
 UserInfo, 
 Workflows
 ```
+
+1. Module "Commands"
+
+This module is used to launch various script-external actions to manipulate database connection, component/page redirection, corresponding events etc.
+
+1) AddItem
+  
+3) ChangePageAsync, ChangePageByName, ChangePageByNameAction, Dispose, EditItem, ExecuteDataflow, ExecuteScript, ExecuteWorkflow, NavigationBack, OnAddItemCommand, OnChangePageCommand, OnComponentOpenCommand, OnEditItemCommand, OnExecuteDataflowCommand, OnExecuteScriptCommand, OnExecuteWorkflowCommand, OnNavigationBackCommand, OpenComponent
+
+
+
+
+
+
+
+
+
