@@ -27,7 +27,7 @@ This module is used to launch various script-external actions to manipulate data
 3) ChangePageAsync, ChangePageByName, ChangePageByNameAction, Dispose, EditItem, ExecuteDataflow, ExecuteScript, ExecuteWorkflow, NavigationBack, OnAddItemCommand, OnChangePageCommand, OnComponentOpenCommand, OnEditItemCommand, OnExecuteDataflowCommand, OnExecuteScriptCommand, OnExecuteWorkflowCommand, OnNavigationBackCommand, OpenComponent
 
 
-
+AddItemCommand, 'ChangePageCommand', 'EditItemCommand', 'ExecuteDataflowCommand', 'ExecuteScriptCommand', 'ExecuteWorkflowCommand', 'OpenComponentCommand
 
 
 
