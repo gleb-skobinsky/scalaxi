@@ -27,7 +27,15 @@ This module is used to launch various script-external actions to manipulate data
 3) ChangePageAsync, ChangePageByName, ChangePageByNameAction, Dispose, EditItem, ExecuteDataflow, ExecuteScript, ExecuteWorkflow, NavigationBack, OnAddItemCommand, OnChangePageCommand, OnComponentOpenCommand, OnEditItemCommand, OnExecuteDataflowCommand, OnExecuteScriptCommand, OnExecuteWorkflowCommand, OnNavigationBackCommand, OpenComponent
 
 
-AddItemCommand, 'ChangePageCommand', 'EditItemCommand', 'ExecuteDataflowCommand', 'ExecuteScriptCommand', 'ExecuteWorkflowCommand', 'OpenComponentCommand
+Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorporates the following classes for instanciating commands:
+
+1. AddItemCommand
+2. ChangePageCommand
+3. EditItemCommand
+4. ExecuteDataflowCommand
+5. ExecuteScriptCommand
+6. ExecuteWorkflowCommand
+7. OpenComponentCommand
 
 
 
