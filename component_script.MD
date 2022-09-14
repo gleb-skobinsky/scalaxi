@@ -40,7 +40,7 @@ This module is used to launch various script-external actions to manipulate data
 
 * ExecuteWorkflow
 
-* NavigationBack
+* NavigationBack: accepts no arguments. Redirects to previous page.
 
 * OnAddItemCommand
 
