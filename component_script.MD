@@ -26,7 +26,7 @@ This module is used to launch various script-external actions to manipulate data
   
 * ChangePageAsync
 
-* ChangePageByName
+* ChangePageByName: accepts an argument of type <code>str</code>. Redirects to another page of the same component the user is currently in.
 
 * ChangePageByNameAction
 
@@ -70,7 +70,7 @@ Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorpo
 4. ExecuteDataflowCommand
 5. ExecuteScriptCommand
 6. ExecuteWorkflowCommand
-7. OpenComponentCommand
+7. OpenComponentCommand: accepts three arguments: 1) Type: <code>System.Guid</code>; description: guid of component in the database (the same one as displayed in the url). 2) Type: <code>System.Guid</code>; description: guid of the page which will be opened upon component initialization. If <code>None</code>, the main page of the component will be opened. 3) Type: <code>System.Collections.Dictionary()str, str</code>. A dictionary of arguments to be passed from the "old" component to the "new" one.
 
 
 
