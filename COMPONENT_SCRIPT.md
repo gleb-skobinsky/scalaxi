@@ -72,8 +72,17 @@ Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorpo
 6. ExecuteWorkflowCommand
 7. OpenComponentCommand: accepts three arguments: 1) Type: <code>System.Guid</code>; description: guid of component in the database (the same one as displayed in the url). 2) Type: <code>System.Guid</code>; description: guid of the page which will be opened upon component initialization. If <code>None</code>, the main page of the component will be opened. 3) Type: <code>"System.Collections.Dictionary[str,str]()"</code>. A dictionary of arguments to be passed from the "old" component to the "new" one.
 
+3. Module ConfirmationService
+4. Module DataModel
 
+DataModel is a container for the component model with all its fields. It changes dynamically as the user provides some input and can be manipulated directly from the script.
 
+For example:
+```
+datamodel = context.DataModel.Model
+def change_username:
+    datamodel.Username = "some-user"
+```
 
 
 
