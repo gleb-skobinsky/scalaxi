@@ -62,7 +62,7 @@ This module is used to launch various script-external actions to manipulate data
 
 2. Command types
 
-Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorporates the following classes for instanciating commands:
+Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorporates the following classes for instantiating commands:
 
 1. AddItemCommand: accepts an argument of type <code>System.Guid</code> to add an item to the context. Commands of this class are accepted by method <code>context.Commands.AddItem</code>. <b>The nature and behaviour of the added "item" is to be clarified.</b>
 2. ChangePageCommand
