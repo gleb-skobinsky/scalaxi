@@ -22,9 +22,43 @@ Workflows
 
 This module is used to launch various script-external actions to manipulate database connection, component/page redirection, corresponding events etc.
 
-1) AddItem
+* AddItem
   
-3) ChangePageAsync, ChangePageByName, ChangePageByNameAction, Dispose, EditItem, ExecuteDataflow, ExecuteScript, ExecuteWorkflow, NavigationBack, OnAddItemCommand, OnChangePageCommand, OnComponentOpenCommand, OnEditItemCommand, OnExecuteDataflowCommand, OnExecuteScriptCommand, OnExecuteWorkflowCommand, OnNavigationBackCommand, OpenComponent
+* ChangePageAsync
+
+* ChangePageByName
+
+* ChangePageByNameAction
+
+* Dispose
+
+* EditItem
+
+* ExecuteDataflow
+
+* ExecuteScript
+
+* ExecuteWorkflow
+
+* NavigationBack
+
+* OnAddItemCommand
+
+* OnChangePageCommand
+
+* OnComponentOpenCommand
+
+* OnEditItemCommand
+
+* OnExecuteDataflowCommand
+
+* OnExecuteScriptCommand
+
+* OnExecuteWorkflowCommand
+
+* OnNavigationBackCommand
+
+* OpenComponent
 
 
 Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorporates the following classes for instanciating commands:
