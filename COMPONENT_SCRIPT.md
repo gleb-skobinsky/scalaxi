@@ -60,7 +60,7 @@ This module is used to launch various script-external actions to manipulate data
 
 * OpenComponent
 
-2. Command types
+- Command types
 
 Module <code>Scalaxi.Platform.Shared.RenderEngine.Models.Commands</code> incorporates the following classes for instantiating commands:
 
